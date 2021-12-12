@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    healthlocation: Log In
+{% endblock %}
+
+{% block main %}
+   <form action=/programs/login method=post>
+     <div class=form-group>
+       <input autocomplete=off class=form-control autofocus name=username placeholder=Username>
+     </div>
+     <div class=form-group>
+       <input autocomplete=off class=form-control autofocus name=password placeholder=Password>
+     </div>
+     <button class="btn btn-primary" type=submit>Log In</button>
+    </form>
+  {% endblock %}
